@@ -27,7 +27,8 @@ CREATE TABLE t_recolte_import (
     i_quantite_cognac_armagnac FLOAT(4) NOT NULL,
     i_quantite_commercialisable FLOAT(4) NOT NULL,
     i_quantite_non_commercialisable FLOAT(4) NOT NULL,
-    i_total_quantite FLOAT(4) NOT NULL
+    i_total_quantite FLOAT(4) NOT NULL,
+    CONSTRAINT pk_id_recolte PRIMARY KEY(id_recolte)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv' INTO
