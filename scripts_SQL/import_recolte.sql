@@ -2,11 +2,10 @@
 DROP TABLE IF EXISTS t_recolte_import;
 
 CREATE TABLE t_recolte_import (
-    id_recolte INT NOT NULL AUTO_INCREMENT,
     -- Informations sur les départements
     i_numero_departement VARCHAR(4) NOT NULL,
     -- Informations sur les déclarations de récoltes
-    
+    i_declaration_recolte INT NOT NULL,
     -- Informations sur la superficie des vignes
     i_total_surface FLOAT(4) NOT NULL,
     i_surface_aop FLOAT(4) NOT NULL,
@@ -27,12 +26,11 @@ CREATE TABLE t_recolte_import (
     i_quantite_cognac_armagnac FLOAT(4) NOT NULL,
     i_quantite_commercialisable FLOAT(4) NOT NULL,
     i_quantite_non_commercialisable FLOAT(4) NOT NULL,
-    i_total_quantite FLOAT(4) NOT NULL,
-    CONSTRAINT pk_id_recolte PRIMARY KEY(id_recolte)
+    i_total_quantite FLOAT(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv' INTO
-TABLE t_recolte_import
+LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv'
+INTO TABLE t_recolte_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\r\n';
+LINES TERMINATED BY '\n';
