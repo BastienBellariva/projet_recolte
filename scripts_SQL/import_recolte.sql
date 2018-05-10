@@ -6,7 +6,7 @@ CREATE TABLE t_recolte_import (
     -- Informations sur les départements
     i_numero_departement VARCHAR(4) NOT NULL,
     -- Informations sur les déclarations de récoltes
-    A ECRIRE;
+    
     -- Informations sur la superficie des vignes
     i_total_surface FLOAT(4) NOT NULL,
     i_surface_aop FLOAT(4) NOT NULL,
