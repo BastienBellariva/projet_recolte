@@ -7,23 +7,27 @@
 #Récupération du nom de la BDD a créer
 #DBName = "$1"
 
-#Lancement du script "creation-base" : crée la base d_vigne
-mysql -u root -p <../scripts_SQL/creation-base.sql
+#Lancement du script "1_creation_base" : crée la base d_vigne
+mysql -u root -p <../scripts_SQL/1_creation_base.sql
 echo "La création de la base de données est terminée."
 
-#Lancement du script "import_recolte" : importe toutes les valeurs avec le numéro de département faisant l'unicité des lignes
-#mysql -u root -p d_vigne < ../scripts_SQL/import_recolte.sql
-#echo "L'import de l'ensemble des valeurs s'est déroulé correctement."
+#Lancement du script "2_import_recolte" : importe toutes les valeurs avec le numéro de département faisant l'unicité des lignes
+mysql -u root -p d_vigne < ../scripts_SQL/2_import_recolte.sql
+echo "L'import de l'ensemble des valeurs s'est déroulé correctement."
 
-#Lancement du script "import_couleur" : importe toutes les couleurs de vin
-mysql -u root -p d_vigne < ../scripts_SQL/import_couleur.sql
+#Lancement du script "3_import_couleur" : importe toutes les couleurs de vin
+mysql -u root -p d_vigne < ../scripts_SQL/3_import_couleur.sql
 echo "La table couleur a été créée et ses valeurs importées correctement."
 
-#Lancement du script "import_departement" : importe tous les départements
-#mysql -u root -p d_vigne < ../scripts_SQL/import_departement.sql
-#echo "La table departement a été créée et ses valeurs importées correctement."
+#Lancement du script "4_import_departement" : importe tous les départements
+mysql -u root -p d_vigne < ../scripts_SQL/4_import_departement.sql
+echo "La table departement a été créée et ses valeurs importées correctement."
 
-#Lancement du script "import_type" : importe tous les types
-#mysql -u root -p d_vigne < ../scripts_SQL/import_type.sql
-#echo "La table type a été créée et ses valeurs importées correctement."
+#Lancement du script "5_import_type" : importe tous les types
+mysql -u root -p d_vigne < ../scripts_SQL/5_import_type.sql
+echo "La table type a été créée et ses valeurs importées correctement."
+
+#Lancement du script "6_creation_autres_tables" : créer les autres tables donc l'ensemble de la base de données.
+mysql -u root -p d_vigne < ../scripts_SQL/6_creation_autres_tables.sql
+echo "Les tables de la base d_vigne ont bien été créées."
 
