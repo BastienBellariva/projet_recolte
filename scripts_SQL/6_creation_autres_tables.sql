@@ -10,7 +10,9 @@ CREATE TABLE t_surface (
 -- Table quantité : stocke la quantité totale d'un département et permet le lien avec les quantités détaillées par type/couleur de vin
 CREATE TABLE t_quantite (
   id_quantite INT(4) NOT NULL AUTO_INCREMENT,
-  total_quantite INT(10) NOT NULL,
+  total_quantite FLOAT(4) NOT NULL,
+  quantite_commercialisable FLOAT(4) NOT NULL,
+  quantite_non_commercialisable FLOAT(4) NOT NULL,
   id_departement INT(4) NOT NULL,
   CONSTRAINT pk_id_quantite PRIMARY KEY(id_quantite),
     CONSTRAINT fk_quantite_departement FOREIGN KEY(id_departement) REFERENCES t_departement(id_departement)
@@ -21,7 +23,7 @@ CREATE TABLE t_surface_detail (
   id_surface_detail INT(4) NOT NULL AUTO_INCREMENT,
   id_type INT(4) NOT NULL,
   id_surface INT(4) NOT NULL,
-  valeur_surface_detail INT(10) NOT NULL,
+  valeur_surface_detail FLOAT(4) NOT NULL,
   CONSTRAINT pk_id_surface_detail PRIMARY KEY(id_surface_detail),
     CONSTRAINT fk_surface_detail_type FOREIGN KEY(id_type) REFERENCES t_type(id_type),
     CONSTRAINT fk_surface_detail_surface FOREIGN KEY(id_surface) REFERENCES t_surface(id_surface)
@@ -33,7 +35,7 @@ CREATE TABLE t_quantite_detail (
   id_type INT(4) NOT NULL,
   id_quantite INT(4) NOT NULL,
   id_couleur INT(4) NOT NULL,
-  valeur_quantite_detail INT(10) NOT NULL,
+  valeur_quantite_detail FLOAT(4) NOT NULL,
   CONSTRAINT pk_id_quantite_detail PRIMARY KEY(id_quantite_detail),
     CONSTRAINT fk_quantite_detail_type FOREIGN KEY(id_type) REFERENCES t_type(id_type),
     CONSTRAINT fk_quantite_detail_quantite FOREIGN KEY(id_quantite) REFERENCES t_quantite(id_quantite),
