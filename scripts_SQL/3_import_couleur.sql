@@ -20,9 +20,9 @@ CREATE TABLE t_couleur (
 
 -- Remplissage de cette table à partir de la table import
 INSERT INTO t_couleur (
-  libelle_couleur
+  libelle_couleur,
   information_couleur )
   SELECT DISTINCT
-    i_libelle_couleur
+    i_libelle_couleur,
     i_information_couleur
   FROM t_couleur_import
