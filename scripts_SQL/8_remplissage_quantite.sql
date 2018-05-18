@@ -23,11 +23,11 @@ INSERT INTO t_tmp_quantite (
     FROM t_recolte_import;
 
 -- On remplit le champs id_departement pour préparer la jointure
-UPDATE t_tmp_surface
+UPDATE t_tmp_surface AS tmp
 SET tmp_id_departement =
     (SELECT id_departement
-    FROM t_departement
-    WHERE t_tmp_quantite.tmp_numero_departement = t_departement.numero_departement);
+    FROM t_departement AS d
+    WHERE tmp.tmp_numero_departement = d.numero_departement);
 
 -- On transfert les valeurs dans la table t_quantite
 INSERT INTO t_quantite (
