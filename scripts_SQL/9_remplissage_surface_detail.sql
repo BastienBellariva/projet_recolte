@@ -42,7 +42,7 @@ SET tmp_id_surface =
     WHERE tmp.tmp_id_departement = s.id_departement);
 
 
------- surface AOP ------
+-- surface AOP
 -- On remplit le champs id_type pour préparer la jointure
 UPDATE t_tmp_surface_detail
 SET tmp_id_type =
@@ -62,7 +62,7 @@ INSERT INTO t_surface_detail (
     FROM t_tmp_surface_detail;
 
 
------- surface ACA -------
+-- surface ACA
 -- On remplit le champs id_type pour préparer la jointure
 UPDATE t_tmp_surface_detail
 SET tmp_id_type =
@@ -82,7 +82,7 @@ INSERT INTO t_surface_detail (
     FROM t_tmp_surface_detail;
 
 
------- surface IGP -------
+-- surface IGP
 -- On remplit le champs id_type pour préparer la jointure
 UPDATE t_tmp_surface_detail
 SET tmp_id_type =
@@ -102,7 +102,7 @@ INSERT INTO t_surface_detail (
     FROM t_tmp_surface_detail;
 
 
------- surface VSIG -------
+-- surface VSIG
 -- On remplit le champs id_type pour préparer la jointure
 UPDATE t_tmp_surface_detail
 SET tmp_id_type =

@@ -40,8 +40,8 @@ mysql -u root -p d_vigne < ../scripts_SQL/8_remplissage_quantite.sql
 echo "La table quantite a été remplie avec succès."
 
 #Lancement du script "9_remplissage_surface_detail" : remplie la table t_surface_detail
-#mysql -u root -p d_vigne < ../scripts_SQL/9_remplissage_surface_detail.sql
-#echo "La table surface detail a été remplie avec succès."
+mysql -u root -p d_vigne < ../scripts_SQL/9_remplissage_surface_detail.sql
+echo "La table surface detail a été remplie avec succès."
 
 #Lancement du script "10_remplissage_quantite_detail" : remplie la table t_quantite_detail
 #mysql -u root -p d_vigne < ../scripts_SQL/10_remplissage_quantite_detail.sql
