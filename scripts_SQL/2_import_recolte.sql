@@ -7,7 +7,7 @@ CREATE TABLE t_recolte_import (
     -- Informations sur les déclarations de récoltes
     i_declaration_recolte INT NOT NULL,
     -- Informations sur la superficie des vignes
-    i_total_surface FLOAT(4) NOT NULL,
+    i_total_surface FLOAT(10) NOT NULL,
     i_surface_aop FLOAT(4) NOT NULL,
     i_surface_cognac_armagnac FLOAT(4) NOT NULL,
     i_surface_igp FLOAT(4) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE t_recolte_import (
     i_quantite_cognac_armagnac FLOAT(4) NOT NULL,
     i_quantite_commercialisable FLOAT(4) NOT NULL,
     i_quantite_non_commercialisable FLOAT(4) NOT NULL,
-    i_total_quantite FLOAT(4) NOT NULL
+    i_total_quantite FLOAT(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv'
