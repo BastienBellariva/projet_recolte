@@ -6,7 +6,7 @@ CREATE TABLE t_tmp_quantite (
     tmp_quantite_non_commercialisable FLOAT(4) NOT NULL,
     tmp_numero_departement VARCHAR(4) NOT NULL,
     tmp_id_departement INT(4),
-    CONSTRAINT pk_id_tmp_surface PRIMARY KEY(id_tmp_surface)
+    CONSTRAINT pk_id_tmp_quantite PRIMARY KEY(id_tmp_quantite)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- On insert les valeurs qu'on veut dans notre table temporaire
@@ -23,7 +23,7 @@ INSERT INTO t_tmp_quantite (
     FROM t_recolte_import;
 
 -- On remplit le champs id_departement pour préparer la jointure
-UPDATE t_tmp_surface AS tmp
+UPDATE t_tmp_quantite AS tmp
 SET tmp_id_departement =
     (SELECT id_departement
     FROM t_departement AS d
