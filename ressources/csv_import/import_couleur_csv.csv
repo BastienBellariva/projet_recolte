@@ -1,4 +1,5 @@
-"rouge";"vin rouge"
-"blanc";"vin blanc"
-"rose";"vin rose"
-"vci vsi";"vin non classe, volume complementaire individuel"
+rouge;vin rouge
+blanc;vin blanc
+rose;vin rose
+vci_vsi;vin non classe, volume complementaire individuel
+na;non attribue
