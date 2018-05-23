@@ -18,7 +18,7 @@ INSERT INTO t_tmp_surface_detail (
     tmp_surface_cognac_armagnac,
     tmp_surface_igp,
     tmp_surface_vsig,
-    tmp_numero_departement)
+    tmp_numero_departement )
     SELECT
         i_surface_aop,
         i_surface_cognac_armagnac,
@@ -54,7 +54,7 @@ SET tmp_id_type =
 INSERT INTO t_surface_detail (
     id_type,
     id_surface,
-    valeur_surface_detail)
+    valeur_surface_detail )
     SELECT
         tmp_id_type,
         tmp_id_surface,
@@ -74,7 +74,7 @@ SET tmp_id_type =
 INSERT INTO t_surface_detail (
     id_type,
     id_surface,
-    valeur_surface_detail)
+    valeur_surface_detail )
     SELECT
         tmp_id_type,
         tmp_id_surface,
@@ -94,7 +94,7 @@ SET tmp_id_type =
 INSERT INTO t_surface_detail (
     id_type,
     id_surface,
-    valeur_surface_detail)
+    valeur_surface_detail )
     SELECT
         tmp_id_type,
         tmp_id_surface,
@@ -114,7 +114,7 @@ SET tmp_id_type =
 INSERT INTO t_surface_detail (
     id_type,
     id_surface,
-    valeur_surface_detail)
+    valeur_surface_detail )
     SELECT
         tmp_id_type,
         tmp_id_surface,

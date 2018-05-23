@@ -14,7 +14,7 @@ INSERT INTO t_tmp_quantite (
     tmp_total_quantite,
     tmp_quantite_commercialisable,
     tmp_quantite_non_commercialisable,
-    tmp_numero_departement)
+    tmp_numero_departement )
     SELECT
         i_total_quantite,
         i_quantite_commercialisable,
@@ -34,7 +34,7 @@ INSERT INTO t_quantite (
     total_quantite,
     quantite_commercialisable,
     quantite_non_commercialisable,
-    id_departement)
+    id_departement )
     SELECT
         tmp_total_quantite,
         tmp_quantite_commercialisable,

@@ -33,7 +33,7 @@ INSERT INTO t_tmp_quantite_detail (
     tmp_quantite_vsig_rouge,
     tmp_quantite_vsig_rose,
     tmp_quantite_cognac_armagnac,
-    tmp_numero_departement)
+    tmp_numero_departement )
     SELECT
         i_quantite_aop_blanc,
         i_quantite_aop_rouge,
@@ -83,7 +83,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -102,7 +102,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -140,7 +140,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -168,7 +168,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -196,7 +196,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -215,7 +215,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -234,7 +234,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -261,7 +261,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -280,7 +280,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,
@@ -299,7 +299,7 @@ INSERT INTO t_quantite_detail (
     id_type,
     id_quantite,
     id_couleur,
-    valeur_quantite_detail)
+    valeur_quantite_detail )
     SELECT
         tmp_id_type,
         tmp_id_quantite,

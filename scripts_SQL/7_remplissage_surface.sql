@@ -10,7 +10,7 @@ CREATE TABLE t_tmp_surface (
 -- On insert les valeurs qu'on veut dans notre table temporaire
 INSERT INTO t_tmp_surface (
     tmp_total_surface,
-    tmp_numero_departement)
+    tmp_numero_departement )
     SELECT 
         i_total_surface,
         i_numero_departement
@@ -26,7 +26,7 @@ SET tmp_id_departement =
 -- On transfert les valeurs dans la table t_surface
 INSERT INTO t_surface (
     total_surface,
-    id_departement)
+    id_departement )
     SELECT
         tmp_total_surface,
         tmp_id_departement

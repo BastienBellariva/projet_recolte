@@ -26,4 +26,4 @@ INSERT INTO t_couleur (
   SELECT DISTINCT
     i_libelle_couleur,
     i_information_couleur
-  FROM t_couleur_import
+  FROM t_couleur_import;
