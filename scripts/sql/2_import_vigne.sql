@@ -26,7 +26,7 @@ CREATE TABLE t_vigne_import (
     i_total_quantite FLOAT(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../sources/import_vigne_csv.csv'
+LOAD DATA LOCAL INFILE '../../source/import_vigne_csv.csv'
 INTO TABLE t_vigne_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'

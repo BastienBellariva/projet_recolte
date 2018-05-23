@@ -4,7 +4,7 @@ CREATE TABLE t_cepage_import (
   i_information_cepage VARCHAR(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../sources/import_cepage_csv.csv'
+LOAD DATA LOCAL INFILE '../../source/import_cepage_csv.csv'
 INTO TABLE t_cepage_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'

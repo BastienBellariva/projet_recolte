@@ -4,7 +4,7 @@ CREATE TABLE t_categorie_import (
   i_infomation_categorie VARCHAR(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../sources/import_categorie_csv.csv' 
+LOAD DATA LOCAL INFILE '../../source/import_categorie_csv.csv' 
 INTO TABLE t_categorie_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
