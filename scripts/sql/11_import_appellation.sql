@@ -77,3 +77,7 @@ INSERT INTO t_appellation_departement (
         tmp_id_appellation,
         tmp_id_departement
     FROM t_tmp_appellation_departement;
+
+-- On supprime les tables imports et temporaires
+DROP TABLE t_tmp_appellation_departement;
+DROP TABLE t_appellation_import;

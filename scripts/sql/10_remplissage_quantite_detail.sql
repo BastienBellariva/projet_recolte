@@ -15,8 +15,8 @@ CREATE TABLE t_tmp_quantite_detail (
     tmp_numero_departement VARCHAR(4) NOT NULL,
     tmp_id_departement INT(4),
     tmp_id_quantite INT(4),
-    tmp_id_type INT(4),
-    tmp_id_couleur INT(4),
+    tmp_id_categorie INT(4),
+    tmp_id_cepage INT(4),
     CONSTRAINT pk_id_tmp_quantite_detail PRIMARY KEY(id_tmp_quantite_detail)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -47,7 +47,7 @@ INSERT INTO t_tmp_quantite_detail (
         i_quantite_vsig_rose,
         i_quantite_cognac_armagnac,
         i_numero_departement
-    FROM t_recolte_import;
+    FROM t_vigne_import;
 
 -- On remplit le champs id_departement pour préparer la jointure
 UPDATE t_tmp_quantite_detail AS tmp
@@ -65,244 +65,250 @@ SET tmp_id_quantite =
 
 
 -- quantite AOP
--- On remplit le champs id_type pour préparer la jointure
+-- On remplit le champs id_categorie pour préparer la jointure
 UPDATE t_tmp_quantite_detail
-SET tmp_id_type = 
-    (SELECT id_type
-    FROM t_type AS t
-    WHERE t.libelle_type = 'AOP');
+SET tmp_id_categorie = 
+    (SELECT id_categorie
+    FROM t_categorie AS t
+    WHERE t.libelle_categorie = 'AOP');
 
 -- quantite aop blanc
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'blanc');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_aop_blanc
     FROM t_tmp_quantite_detail;
 
 -- quantite aop rouge
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rouge');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_aop_rouge
     FROM t_tmp_quantite_detail;
 
 -- quantite aop rosé
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rose');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail)
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_aop_rose
     FROM t_tmp_quantite_detail;
 
 -- quantite aop vci vsi
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'vci_vsi');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'vci_vsi');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_aop_blanc
     FROM t_tmp_quantite_detail;
 
 
 -- quantite ACA
--- On remplit le champs id_type pour préparer la jointure
+-- On remplit le champs id_categorie pour préparer la jointure
 UPDATE t_tmp_quantite_detail
-SET tmp_id_type = 
-    (SELECT id_type
-    FROM t_type AS t
-    WHERE t.libelle_type = 'ACA');
+SET tmp_id_categorie = 
+    (SELECT id_categorie
+    FROM t_categorie AS t
+    WHERE t.libelle_categorie = 'ACA');
 
--- pas de couleur
+-- pas de cepage
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'na');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'na');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_cognac_armagnac
     FROM t_tmp_quantite_detail;
 
 
 -- quantite IGP
--- On remplit le champs id_type pour préparer la jointure
+-- On remplit le champs id_categorie pour préparer la jointure
 UPDATE t_tmp_quantite_detail
-SET tmp_id_type = 
-    (SELECT id_type
-    FROM t_type AS t
-    WHERE t.libelle_type = 'IGP');
+SET tmp_id_categorie = 
+    (SELECT id_categorie
+    FROM t_categorie AS t
+    WHERE t.libelle_categorie = 'IGP');
 
 -- quantite igp blanc
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'blanc');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_igp_blanc
     FROM t_tmp_quantite_detail;
 
 -- quantite igp rouge
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rouge');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_igp_rouge
     FROM t_tmp_quantite_detail;
 
 -- quantite igp rose
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rose');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_igp_rose
     FROM t_tmp_quantite_detail;
 
 -- quantite VSIG
--- On remplit le champs id_type pour préparer la jointure
+-- On remplit le champs id_categorie pour préparer la jointure
 UPDATE t_tmp_quantite_detail
-SET tmp_id_type = 
-    (SELECT id_type
-    FROM t_type AS t
-    WHERE t.libelle_type = 'VSIG');
+SET tmp_id_categorie = 
+    (SELECT id_categorie
+    FROM t_categorie AS t
+    WHERE t.libelle_categorie = 'VSIG');
 
 -- quantite vsig blanc
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'blanc');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_vsig_blanc
     FROM t_tmp_quantite_detail;
 
 -- quantite vsig rouge
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rouge');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_vsig_rouge
     FROM t_tmp_quantite_detail;
 
 -- quantite vsig rose
 UPDATE t_tmp_quantite_detail
-SET tmp_id_couleur =
-    (SELECT id_couleur
-    FROM t_couleur AS c
-    WHERE c.libelle_couleur = 'rose');
+SET tmp_id_cepage =
+    (SELECT id_cepage
+    FROM t_cepage AS c
+    WHERE c.libelle_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
-    id_type,
+    id_categorie,
     id_quantite,
-    id_couleur,
+    id_cepage,
     valeur_quantite_detail )
     SELECT
-        tmp_id_type,
+        tmp_id_categorie,
         tmp_id_quantite,
-        tmp_id_couleur,
+        tmp_id_cepage,
         tmp_quantite_vsig_rose
     FROM t_tmp_quantite_detail;
+
+-- On supprime les tables temporaires
+DROP TABLE t_tmp_quantite_detail;
+
+-- On supprime la table vigne
+DROP TABLE t_vigne_import;

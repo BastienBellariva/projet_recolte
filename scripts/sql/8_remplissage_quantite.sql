@@ -20,7 +20,7 @@ INSERT INTO t_tmp_quantite (
         i_quantite_commercialisable,
         i_quantite_non_commercialisable,
         i_numero_departement
-    FROM t_recolte_import;
+    FROM t_vigne_import;
 
 -- On remplit le champs id_departement pour préparer la jointure
 UPDATE t_tmp_quantite AS tmp
@@ -41,3 +41,6 @@ INSERT INTO t_quantite (
         tmp_quantite_non_commercialisable,
         tmp_id_departement
     FROM t_tmp_quantite;
+
+-- On supprime les tables temporaires
+DROP TABLE t_tmp_quantite;

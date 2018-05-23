@@ -1,7 +1,4 @@
--- On supprime la table si elle existe deja pour reinitialiser l'import
-DROP TABLE IF EXISTS t_recolte_import;
-
-CREATE TABLE t_recolte_import (
+CREATE TABLE t_vigne_import (
     -- Informations sur les départements
     i_numero_departement VARCHAR(4) NOT NULL,
     -- Informations sur les déclarations de récoltes
@@ -29,8 +26,8 @@ CREATE TABLE t_recolte_import (
     i_total_quantite FLOAT(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv'
-INTO TABLE t_recolte_import
+LOAD DATA LOCAL INFILE '../ressources/csv_import/import_vigne_csv.csv'
+INTO TABLE t_vigne_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'

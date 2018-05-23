@@ -45,4 +45,7 @@ SET id_region =
     INNER JOIN t_region_import AS i ON r.numero_region = i.i_numero_region
     WHERE d.numero_departement = i.i_numero_departement
     AND i.i_numero_region = r.numero_region 
-LIMIT 1);
+    LIMIT 1);
+
+-- On supprime les tables imports et temporaires
+DROP TABLE t_region_import;    

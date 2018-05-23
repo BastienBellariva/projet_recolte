@@ -27,3 +27,6 @@ INSERT INTO t_departement (
     i_numero_departement,
     i_libelle_departement
   FROM t_departement_import;
+
+-- On supprime la table t_departement_import car elle n'est plus utile
+DROP TABLE t_departement_import;

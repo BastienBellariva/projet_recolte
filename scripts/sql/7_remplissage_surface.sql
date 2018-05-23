@@ -14,7 +14,7 @@ INSERT INTO t_tmp_surface (
     SELECT 
         i_total_surface,
         i_numero_departement
-    FROM t_recolte_import;
+    FROM t_vigne_import;
 
 -- On remplit le champs id_departement pour préparer la jointure
 UPDATE t_tmp_surface AS tmp
@@ -31,4 +31,7 @@ INSERT INTO t_surface (
         tmp_total_surface,
         tmp_id_departement
     FROM t_tmp_surface;
+
+-- On supprime les tables temporaires
+DROP TABLE t_tmp_surface;
         
