@@ -51,3 +51,7 @@ echo "La table quantite detail a été remplie avec succès."
 mysql -u root -p d_vigne < ../scripts_SQL/11_import_appellation.sql
 echo "La table appellation a été remplie avec succès et les liens avec les départements sont fonctionnels."
 
+#Lancement du script "12_import_region" : remplie la table t_region et met à jour la table departement
+mysql -u root -p d_vigne < ../scripts_SQL/12_import_region.sql
+echo "La table region a été remplie avec succès et la table département est à jour. Le lien département-region est opérationnel."
+

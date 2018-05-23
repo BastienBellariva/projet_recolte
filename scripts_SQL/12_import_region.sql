@@ -1,11 +1,12 @@
 -- On crée la table stockant toutes les regions avec la correspondance des départements
 CREATE TABLE t_region_import (
     i_numero_departement VARCHAR(4) NOT NULL,
+    i_libelle_departement VARCHAR(50) NOT NULL,
     i_numero_region VARCHAR(4) NOT NULL,
     i_libelle_region VARCHAR(50) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INGILE '../ressources/csv_import/import_region_csv.csv'
+LOAD DATA LOCAL INFILE '../ressources/csv_import/import_region_csv.csv'
 INTO TABLE t_region_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -25,7 +26,7 @@ ALTER TABLE t_departement
 ADD COLUMN id_region INT(4);
 
 ALTER TABLE t_departement
-ADD CONSTRAINT fk_id_region FOREIGN KEY id_region REFERENCES t_region(id_region);
+ADD CONSTRAINT fk_id_region FOREIGN KEY(id_region) REFERENCES t_region(id_region);
 
 -- On insert les valeurs dans la table region
 INSERT INTO t_region (
@@ -43,4 +44,5 @@ SET id_region =
     FROM t_region AS r
     INNER JOIN t_region_import AS i ON r.numero_region = i.i_numero_region
     WHERE d.numero_departement = i.i_numero_departement
-    AND i.i_numero_region = r.numero_region);
+    AND i.i_numero_region = r.numero_region 
+LIMIT 1);
