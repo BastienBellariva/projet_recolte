@@ -4,33 +4,33 @@ Manicle ;AIN
 Montagnieu ;AIN
 Roussette du Bugey;AIN
 Virieu-le-grand ;AIN
-Saint-pourçain;ALLIER
+Saint-pourcain;ALLIER
 Pierrevert ;ALPES-DE-HAUTE-PROVENCE
 Bellet ;ALPES-MARITIMES
-Côtes-de-provence;ALPES-MARITIMES
+Cotes-de-provence;ALPES-MARITIMES
 Condrieu ;ARDECHE
 Cornas;ARDECHE
-Côtes-du-rhône ;ARDECHE
-Côtes-du-rhône villages;ARDECHE
-Côtes-du-vivarais;ARDECHE
+Cotes-du-rhone ;ARDECHE
+Cotes-du-rhone villages;ARDECHE
+Cotes-du-vivarais;ARDECHE
 Saint-joseph;ARDECHE
-Saint-péray;ARDECHE
-Rosé des Riceys;AUBE
+Saint-peray;ARDECHE
+Rose des Riceys;AUBE
 Blanquette de Limoux;AUDE
-Cabardès ;AUDE
-Corbières ;AUDE
-Corbières-boutenac;AUDE
+Cabardes ;AUDE
+Corbieres ;AUDE
+Corbieres-boutenac;AUDE
 Coteaux-du-languedoc;AUDE
-Crémant de Limoux;AUDE
+Cremant de Limoux;AUDE
 Fitou ;AUDE
 La Clape ;AUDE
 Languedoc ;AUDE
 Limoux;AUDE
-Malepère ;AUDE
+Malepere ;AUDE
 Minervois ;AUDE
 Quatourze;AUDE
 Rivesaltes ;AUDE
-Côtes-de-millau;AVEYRON
+Cotes-de-millau;AVEYRON
 Entraygues-et-du-fel;AVEYRON
 Estaing ;AVEYRON
 Marcillac ;AVEYRON
@@ -38,8 +38,8 @@ Cassis ;BOUCHES-DU-RHONE
 Coteaux-d'aix-en-provence;BOUCHES-DU-RHONE
 Les-baux-de-provence;BOUCHES-DU-RHONE
 Palette ;BOUCHES-DU-RHONE
-Côtes-de-provence Sainte-Victoire;BOUCHES-DU-RHONE
-Châteaumeillant ;CHER
+Cotes-de-provence Sainte-Victoire;BOUCHES-DU-RHONE
+Chateaumeillant ;CHER
 Menetou-salon ;CHER
 Quincy ;CHER
 Reuilly ;CHER
@@ -48,100 +48,100 @@ Anjou ;DEUX-SEVRES
 Haut-Poitou ;DEUX-SEVRES
 Saumur ;DEUX-SEVRES
 Bergerac ;DORDOGNE
-Côtes-de-bergerac;DORDOGNE
-Côtes-de-montravel;DORDOGNE
+Cotes-de-bergerac;DORDOGNE
+Cotes-de-montravel;DORDOGNE
 Haut-montravel;DORDOGNE
 Monbazillac ;DORDOGNE
 Montravel ;DORDOGNE
-Pécharmant;DORDOGNE
+Pecharmant;DORDOGNE
 Rosette ;DORDOGNE
 Saussignac ;DORDOGNE
-Brézème;DROME
-Châtillon-en-diois ;DROME
+Brezeme;DROME
+Chatillon-en-diois ;DROME
 Clairette de Die;DROME
 Coteaux-de-die;DROME
-Côtes-du-rhône ;DROME
-Côtes-du-rhône villages;DROME
+Cotes-du-rhone ;DROME
+Cotes-du-rhone villages;DROME
 Crozes-hermitage ;DROME
-Grignan-les-adhémar;DROME
+Grignan-les-adhemar;DROME
 Hermitage ;DROME
-Puyméras ;DROME
+Puymeras ;DROME
 Rochegude ;DROME
 Rousset-les-vignes ;DROME
 Saint-maurice-sur-eygues ;DROME
-Saint-pantaléon-les-vignes ;DROME
+Saint-pantaleon-les-vignes ;DROME
 Suze-la-rousse ;DROME
 Vinsobres ;DROME
 Chusclan ;GARD
 Clairette de Bellegarde;GARD
-Costières-de-nîmes;GARD
+Costieres-de-nimes;GARD
 Coteaux-du-languedoc;GARD
-Côtes-du-rhône ;GARD
-Côtes-du-rhône villages;GARD
-Côtes-du-vivarais;GARD
-Duché-d'uzès ;GARD
+Cotes-du-rhone ;GARD
+Cotes-du-rhone villages;GARD
+Cotes-du-vivarais;GARD
+Duche-d'uzes ;GARD
 Languedoc ;GARD
 Laudun ;GARD
 Lirac ;GARD
 Pic-saint-loup ;GARD
 Saint-gervais ;GARD
 Signargues ;GARD
-Sommières ;GARD
+Sommieres ;GARD
 Tavel ;GARD
-Béarn ;GERS
+Bearn ;GERS
 Brulhois ;GERS
 Madiran ;GERS
 Pacherenc-du-vic-bilh;GERS
 Saint-mont ;GERS
 Barsac;GIRONDE
 Blaye ;GIRONDE
-Blaye-côtes-de-bordeaux;GIRONDE
+Blaye-cotes-de-bordeaux;GIRONDE
 Bordeaux ;GIRONDE
 Bordeaux-clairet;GIRONDE
-Bordeaux-côtes-de-francs;GIRONDE
-Bordeaux-supérieur;GIRONDE
+Bordeaux-cotes-de-francs;GIRONDE
+Bordeaux-superieur;GIRONDE
 Cadillac ;GIRONDE
 Canon-fronsac;GIRONDE
-Cérons ;GIRONDE
-Côtes-de-bordeaux;GIRONDE
-Côtes-de-blaye;GIRONDE
-Côtes-de-bordeaux-saint-macaire;GIRONDE
-Côtes-de-bourg;GIRONDE
-Côtes-de-castillon;GIRONDE
+Cerons ;GIRONDE
+Cotes-de-bordeaux;GIRONDE
+Cotes-de-blaye;GIRONDE
+Cotes-de-bordeaux-saint-macaire;GIRONDE
+Cotes-de-bourg;GIRONDE
+Cotes-de-castillon;GIRONDE
 Entre-deux-mers ;GIRONDE
 Fronsac ;GIRONDE
 Graves ;GIRONDE
 Graves-de-vayres;GIRONDE
-Haut-médoc;GIRONDE
+Haut-medoc;GIRONDE
 Lalande-de-pomerol ;GIRONDE
-Listrac-médoc ;GIRONDE
+Listrac-medoc ;GIRONDE
 Loupiac ;GIRONDE
-Lussac-saint-émilion;GIRONDE
+Lussac-saint-emilion;GIRONDE
 Margaux ;GIRONDE
-Médoc ;GIRONDE
-Montagne-saint-émilion;GIRONDE
-Moulis-en-médoc ;GIRONDE
+Medoc ;GIRONDE
+Montagne-saint-emilion;GIRONDE
+Moulis-en-medoc ;GIRONDE
 Pauillac ;GIRONDE
-Pessac-léognan;GIRONDE
-Premières-côtes-de-bordeaux;GIRONDE
-Puisseguin-saint-émilion;GIRONDE
-Saint-émilion ;GIRONDE
-Saint-émilion grand cru;GIRONDE
-Saint-estèphe ;GIRONDE
-Saint-georges-saint-émilion ;GIRONDE
+Pessac-leognan;GIRONDE
+Premieres-cotes-de-bordeaux;GIRONDE
+Puisseguin-saint-emilion;GIRONDE
+Saint-emilion ;GIRONDE
+Saint-emilion grand cru;GIRONDE
+Saint-estephe ;GIRONDE
+Saint-georges-saint-emilion ;GIRONDE
 Saint-julien ;GIRONDE
 Sainte-croix-du-mont ;GIRONDE
 Sainte-foy-bordeaux;GIRONDE
 Sauternes ;GIRONDE
 Fronton ;HAUTE-GARONNE
 Saint-sardos ;HAUTE-GARONNE
-Béarn ;HAUTES-PYRENEES
+Bearn ;HAUTES-PYRENEES
 Madiran;HAUTES-PYRENEES
 Pacherenc-du-vic-bilh;HAUTES-PYRENEES
 Clairette du Languedoc;HERAULT
 Coteaux-du-languedoc;HERAULT
-Faugères ;HERAULT
-Grés-de-montpellier;HERAULT
+Faugeres ;HERAULT
+Gres-de-montpellier;HERAULT
 Languedoc ;HERAULT
 Minervois ;HERAULT
 Montpeyroux;HERAULT
@@ -149,17 +149,17 @@ Montpeyroux;HERAULT
 Muscat de Lunel;HERAULT
 Muscat de Mireval;HERAULT
 Muscat de Saint-Jean-de-Minervois;HERAULT
-Pézenas;HERAULT
+Pezenas;HERAULT
 Pic-saint-loup ;HERAULT
 Picpoul de Pinet;HERAULT
 Saint-chinian ;HERAULT
-Saint-drézéry ;HERAULT
+Saint-drezery ;HERAULT
 Saint-saturnin ;HERAULT
-Terrasses-de-béziers;HERAULT
+Terrasses-de-beziers;HERAULT
 Terrasses-du-larzac;HERAULT
-Châteaumeillant ;INDRE
+Chateaumeillant ;INDRE
 Reuilly ;INDRE
-Valençay ;INDRE
+Valencay ;INDRE
 Bourgueil ;INDRE-ET-LOIRE
 Chinon ;INDRE-ET-LOIRE
 Coteaux-du-loir;INDRE-ET-LOIRE
@@ -169,39 +169,39 @@ Saumur-champigny;INDRE-ET-LOIRE
 Touraine ;INDRE-ET-LOIRE
 Touraine-amboise;INDRE-ET-LOIRE
 Touraine-azay-le-rideau;INDRE-ET-LOIRE
-Touraine-noble-joué;INDRE-ET-LOIRE
+Touraine-noble-joue;INDRE-ET-LOIRE
 Vouvray ;INDRE-ET-LOIRE
 Arbois ;JURA
-Château-chalon ;JURA
-Côtes-du-jura;JURA
-Crémant du Jura;JURA
-L'étoile;JURA
+Chateau-chalon ;JURA
+Cotes-du-jura;JURA
+Cremant du Jura;JURA
+L'etoile;JURA
 Macvin du Jura;JURA
 Cheverny ;LOIR-ET-CHER
-Coteaux-du-vendômois;LOIR-ET-CHER
+Coteaux-du-vendomois;LOIR-ET-CHER
 Cour-cheverny ;LOIR-ET-CHER
 Touraine ;LOIR-ET-CHER
 Touraine-mesland;LOIR-ET-CHER
-Valençay ;LOIR-ET-CHER
-Château-grillet ;LOIRE
+Valencay ;LOIR-ET-CHER
+Chateau-grillet ;LOIRE
 Condrieu ;LOIRE
-Côte-roannaise;LOIRE
-Côtes-du-forez;LOIRE
+Cote-roannaise;LOIRE
+Cotes-du-forez;LOIRE
 Saint-joseph ;LOIRE
 Coteaux-d'ancenis;LOIRE-ATLANTIQUE
 Gros-plant-du-pays-nantais;LOIRE-ATLANTIQUE
 Muscadet ;LOIRE-ATLANTIQUE
 Muscadet-coteaux-de-la-loire;LOIRE-ATLANTIQUE
-Muscadet-côtes-de-grandlieu;LOIRE-ATLANTIQUE
-Muscadet-sèvre-et-maine;LOIRE-ATLANTIQUE
+Muscadet-cotes-de-grandlieu;LOIRE-ATLANTIQUE
+Muscadet-sevre-et-maine;LOIRE-ATLANTIQUE
 Coteaux-du-giennois;LOIRET
-Orléans ;LOIRET
-Orléans-cléry;LOIRET
+Orleans ;LOIRET
+Orleans-clery;LOIRET
 Cahors;LOT
 Brulhois ;LOT-ET-GARONNE
 Buzet ;LOT-ET-GARONNE
-Côtes-de-duras;LOT-ET-GARONNE
-Côtes-du-marmandais;LOT-ET-GARONNE
+Cotes-de-duras;LOT-ET-GARONNE
+Cotes-du-marmandais;LOT-ET-GARONNE
 Anjou;MAINE-ET-LOIRE
 Anjou fines bulles;MAINE-ET-LOIRE
 Anjou villages;MAINE-ET-LOIRE
@@ -214,90 +214,90 @@ Coteaux-d'ancenis;MAINE-ET-LOIRE
 Coteaux-de-l'aubance;MAINE-ET-LOIRE
 Coteaux-de-saumur;MAINE-ET-LOIRE
 Coteaux-du-layon;MAINE-ET-LOIRE
-Crémant de Loire;MAINE-ET-LOIRE
+Cremant de Loire;MAINE-ET-LOIRE
 Muscadet ;MAINE-ET-LOIRE
 Muscadet-coteaux-de-la-loire;MAINE-ET-LOIRE
-Muscadet-sèvre-et-maine;MAINE-ET-LOIRE
+Muscadet-sevre-et-maine;MAINE-ET-LOIRE
 Quarts-de-chaume;MAINE-ET-LOIRE
-Rosé de Loire;MAINE-ET-LOIRE
+Rose de Loire;MAINE-ET-LOIRE
 Saumur;MAINE-ET-LOIRE
 Saumur brut;MAINE-ET-LOIRE
 Saumur-champigny;MAINE-ET-LOIRE
-Savennières;MAINE-ET-LOIRE
-Côtes-de-toul;MEURTHE-ET-MOSELLE
+Savennieres;MAINE-ET-LOIRE
+Cotes-de-toul;MEURTHE-ET-MOSELLE
 Moselle;MEURTHE-ET-MOSELLE
 Moselle ;MOSELLE
 Coteaux-du-giennois;NIEVRE
-Pouilly-fumé;NIEVRE
+Pouilly-fume;NIEVRE
 Pouilly-sur-loire;NIEVRE
-Côtes-d'auvergne;PUY-DE-DOME
+Cotes-d'auvergne;PUY-DE-DOME
 Madargue;PUY-DE-DOME
 Banyuls;PYRENEES-ORIENTALES
 Bartissol;PYRENEES-ORIENTALES
 Caramany;PYRENEES-ORIENTALES
 Collioure;PYRENEES-ORIENTALES
-Côtes du Roussillon Villages;PYRENEES-ORIENTALES
-Côtes-du-Roussillon;PYRENEES-ORIENTALES
+Cotes du Roussillon Villages;PYRENEES-ORIENTALES
+Cotes-du-Roussillon;PYRENEES-ORIENTALES
 Domaine de La Rectorie;PYRENEES-ORIENTALES
 Languedoc;PYRENEES-ORIENTALES
 Maury;PYRENEES-ORIENTALES
 Muscat de Rivesaltes;PYRENEES-ORIENTALES
 Rimage;PYRENEES-ORIENTALES
 Rivesaltes;PYRENEES-ORIENTALES
-Vabé;PYRENEES-ORIENTALES
-Béarn;PYRENEES-ATLANTIQUES
-Irouléguy;PYRENEES-ATLANTIQUES
-Jurançon;PYRENEES-ATLANTIQUES
+Vabe;PYRENEES-ORIENTALES
+Bearn;PYRENEES-ATLANTIQUES
+Irouleguy;PYRENEES-ATLANTIQUES
+Jurancon;PYRENEES-ATLANTIQUES
 Madiran;PYRENEES-ATLANTIQUES
 Pacherenc-du-vic-bilh;PYRENEES-ATLANTIQUES
 Brouilly;RHONE
-Chénas ;RHONE
+Chenas ;RHONE
 Chiroubles ;RHONE
 Condrieu ;RHONE
-Côte-de-brouilly;RHONE
-Côte-rôtie ;RHONE
+Cote-de-brouilly;RHONE
+Cote-rotie ;RHONE
 Coteaux-du-lyonnais;RHONE
-Juliénas ;RHONE
+Julienas ;RHONE
 Morgon;RHONE
-Moulin-à-vent ;RHONE
-Régnié;RHONE
+Moulin-a-vent ;RHONE
+Regnie;RHONE
 Coteaux-du-loir;SARTHE
-Jasnières;SARTHE
+Jasnieres;SARTHE
 Gaillac;TARN
-Gaillac-premières-côtes;TARN
+Gaillac-premieres-cotes;TARN
 Brulhois;TARN-ET-GARONNE
 Fronton ;TARN-ET-GARONNE
 Saint-sardos ;TARN-ET-GARONNE
 Beaumes-de-venise;VAUCLUSE
 Cairanne;VAUCLUSE
-Châteauneuf-du-pape;VAUCLUSE
-Côtes-du-rhône;VAUCLUSE
-Côtes-du-rhône villages;VAUCLUSE
+Chateauneuf-du-pape;VAUCLUSE
+Cotes-du-rhone;VAUCLUSE
+Cotes-du-rhone villages;VAUCLUSE
 Gigondas;VAUCLUSE
 Luberon;VAUCLUSE
 Massif-d'uchaux;VAUCLUSE
 Muscat de Beaumes-de-Venise;VAUCLUSE
 Plan-de-dieu;VAUCLUSE
-Puyméras;VAUCLUSE
+Puymeras;VAUCLUSE
 Rasteau;VAUCLUSE
 Rasteau;VAUCLUSE
 Roaix;VAUCLUSE
 Sablet;VAUCLUSE
-Sainte-Cécile-les-Vignes;VAUCLUSE
-Séguret;VAUCLUSE
+Sainte-Cecile-les-Vignes;VAUCLUSE
+Seguret;VAUCLUSE
 Vacqueyras;VAUCLUSE
 Vaison-la-romaine;VAUCLUSE
-Valréas;VAUCLUSE
+Valreas;VAUCLUSE
 Ventoux;VAUCLUSE
 Visan;VAUCLUSE
-Fiefs-vendéens;VENDEE
+Fiefs-vendeens;VENDEE
 Muscadet;VENDEE
-Muscadet-côtes-de-grandlieu;VENDEE
+Muscadet-cotes-de-grandlieu;VENDEE
 Anjou;VIENNE
 Haut-Poitou;VIENNE
 Bandol;VAR
 Coteaux-varois-en-provence;VAR
-Côtes-de-provence;VAR
-Côtes-de-provence Fréjus;VAR
-Côtes-de-provence La Londe;VAR
-Côtes-de-provence Sainte-Victoire;VAR
+Cotes-de-provence;VAR
+Cotes-de-provence Frejus;VAR
+Cotes-de-provence La Londe;VAR
+Cotes-de-provence Sainte-Victoire;VAR
