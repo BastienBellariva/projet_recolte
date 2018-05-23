@@ -47,7 +47,7 @@ echo "La table surface detail a été remplie avec succès."
 mysql -u root -p d_vigne < ../scripts_SQL/10_remplissage_quantite_detail.sql
 echo "La table quantite detail a été remplie avec succès."
 
-#Lancement du script "import_appellation" : remplie la table t_appellation et gère les jonctions avec les départements
-mysql -u root -p d_vigne < ../scripts_SQL/import_appellation.sql
+#Lancement du script "11_import_appellation" : remplie la table t_appellation et gère les jonctions avec les départements
+mysql -u root -p d_vigne < ../scripts_SQL/11_import_appellation.sql
 echo "La table appellation a été remplie avec succès et les liens avec les départements sont fonctionnels."
 
