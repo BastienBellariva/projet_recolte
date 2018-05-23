@@ -8,7 +8,8 @@ LOAD DATA LOCAL INFILE '../ressources/csv_import/import_departement_csv.csv' INT
 TABLE t_departement_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n';
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
 
 -- Creation de la table t_departement finale et propre, avec ID
 CREATE TABLE t_departement (

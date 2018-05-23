@@ -8,7 +8,8 @@ LOAD DATA LOCAL INFILE '../ressources/csv_import/import_type_csv.csv'
 INTO TABLE t_type_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n';
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
 
 -- Creation de la table t_type finale et propre, avec ID
 CREATE TABLE t_type (

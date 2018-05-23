@@ -33,4 +33,5 @@ LOAD DATA LOCAL INFILE '../ressources/csv_import/import_recolte_csv.csv'
 INTO TABLE t_recolte_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n';
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;

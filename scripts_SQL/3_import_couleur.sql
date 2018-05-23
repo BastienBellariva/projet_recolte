@@ -8,7 +8,8 @@ LOAD DATA LOCAL INFILE '../ressources/csv_import/import_couleur_csv.csv'
 INTO TABLE t_couleur_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n';
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
 
 -- Création de la table t_couleur finale et propre, avec ID
 CREATE TABLE t_couleur (
