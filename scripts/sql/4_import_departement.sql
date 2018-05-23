@@ -4,7 +4,7 @@ CREATE TABLE t_departement_import (
   i_libelle_departement VARCHAR(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../ressources/csv_import/import_departement_csv.csv' INTO
+LOAD DATA LOCAL INFILE '../sources/import_departement_csv.csv' INTO
 TABLE t_departement_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'

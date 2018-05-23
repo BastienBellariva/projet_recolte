@@ -6,7 +6,7 @@ CREATE TABLE t_region_import (
     i_libelle_region VARCHAR(50) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../ressources/csv_import/import_region_csv.csv'
+LOAD DATA LOCAL INFILE '../sources/import_region_csv.csv'
 INTO TABLE t_region_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
