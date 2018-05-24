@@ -108,9 +108,15 @@ fi
 #Lancement du script "12_import_region" : remplie la table t_region et met à jour la table departement
 mysql --user=${USER} --password=${PASS} d_vigne < ../sql/12_import_region.sql
 if [ $? -eq 0 ]; then
-    echo "La table region a été remplie avec succès et la table département est à jour. Le lien département-region est opérationnel." 1>&2
+    echo "La table t_region a été remplie avec succès et la table t_département est à jour. Le lien département-region est opérationnel." 1>&2
 else
 echo "[Error] Remplissage table region / MAJ table departement"
 fi
 
-
+#Lancement du script "13_import_cepage_appellation" : remplie la table t_cepage_appelation
+mysql --user=${USER} --password=${PASS} d_vigne < ../sql/13_import_cepage_appellation.sql
+if [ $? -eq 0 ]; then
+    echo "La table t_cepage_appellation a été remplie avec succès. Le lien cepage-appellation est opérationnel." 1>&2
+else
+echo "[Error] Remplissage table t_cepage_appellation"
+fi
