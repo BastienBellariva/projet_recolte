@@ -4,7 +4,7 @@ CREATE TABLE t_appellation_import (
     i_libelle_departement VARCHAR(80) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOAD DATA LOCAL INFILE '../../source/import_appellation_csv.csv'
+LOAD DATA LOCAL INFILE '../../source/import_appellation_par_dpt_csv.csv'
 INTO TABLE t_appellation_import
 FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
@@ -29,14 +29,14 @@ CREATE TABLE t_appellation_departement (
         CONSTRAINT fk_id_departement FOREIGN KEY(id_departement) REFERENCES t_departement(id_departement)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Cration de la table temporaire pour gérer les liens entre départemenents et appellations
+-- Création de la table temporaire pour gérer les liens entre départemenents et appellations
 CREATE TABLE t_tmp_appellation_departement (
     tmp_id_appellation_departement INT(4) NOT NULL AUTO_INCREMENT,
     tmp_libelle_appellation VARCHAR(50) NOT NULL,
     tmp_libelle_departement VARCHAR(80) NOT NULL,
     tmp_id_appellation INT(4),
     tmp_id_departement INT(4),
-    CONSTRAINT pk_id_tmp_appellation_departement PRIMARY KEY(tmp_id_appellation_departement)
+    CONSTRAINT pk_tmp_id_appellation_departement PRIMARY KEY(tmp_id_appellation_departement)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Remplissage de la table appellation
@@ -55,14 +55,14 @@ INSERT INTO t_tmp_appellation_departement (
         i_libelle_departement
     FROM t_appellation_import;
 
--- Mise en lien des appellations avec les ID pour les jonctions
+-- Mise en lien des appellations avec les ID pour les jointures
 UPDATE t_tmp_appellation_departement AS tmp
 SET tmp_id_appellation =
     (SELECT id_appellation
     FROM t_appellation AS a
     WHERE tmp.tmp_libelle_appellation = a.libelle_appellation);
 
--- Mise en lien des départements avec les ID pour les jonctions
+-- Mise en lien des départements avec les ID pour les jointures
 UPDATE t_tmp_appellation_departement AS tmp
 SET tmp_id_departement =
     (SELECT id_departement

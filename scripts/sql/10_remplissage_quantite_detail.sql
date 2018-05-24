@@ -77,7 +77,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'blanc');
+    WHERE c.code_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -96,7 +96,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rouge');
+    WHERE c.code_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -115,7 +115,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rose');
+    WHERE c.code_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -134,7 +134,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'vci_vsi');
+    WHERE c.code_cepage = 'vci_vsi');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -162,7 +162,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'na');
+    WHERE c.code_cepage = 'na');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -190,7 +190,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'blanc');
+    WHERE c.code_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -209,7 +209,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rouge');
+    WHERE c.code_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -228,7 +228,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rose');
+    WHERE c.code_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -255,7 +255,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'blanc');
+    WHERE c.code_cepage = 'blanc');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -274,7 +274,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rouge');
+    WHERE c.code_cepage = 'rouge');
 
 INSERT INTO t_quantite_detail (
     id_categorie,
@@ -293,7 +293,7 @@ UPDATE t_tmp_quantite_detail
 SET tmp_id_cepage =
     (SELECT id_cepage
     FROM t_cepage AS c
-    WHERE c.libelle_cepage = 'rose');
+    WHERE c.code_cepage = 'rose');
 
 INSERT INTO t_quantite_detail (
     id_categorie,

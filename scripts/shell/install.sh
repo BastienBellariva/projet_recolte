@@ -16,6 +16,3 @@ echo "Installation MySQL DONE"
 echo "Installation Workbench"
 sudo apt-get install mysql-workbench
 echo "Installation Workbench DONE"
-
-#Import du script sql
-mysql -u root -p d_vigne < creation-base.sql

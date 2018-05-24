@@ -1,6 +1,9 @@
-libelle_couleur;description_couleur
+code_cepage;description_cepage
 rouge;vin rouge
 blanc;vin blanc
 rose;vin rose
 vci_vsi;vin non classe, volume complementaire individuel
+de_paille;vin de paille
+gris;vin gris
+jaune;vin jaune
 na;non attribue
