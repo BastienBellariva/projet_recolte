@@ -6,7 +6,7 @@ CREATE TABLE t_cepage_appellation_import (
 
 LOAD DATA LOCAL INFILE '../../source/import_cepage_appellation_csv.csv'
 INTO TABLE t_cepage_appellation_import
-FIELDS TERMINATED BU ';'
+FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
@@ -18,7 +18,7 @@ CREATE TABLE t_cepage_appellation (
     id_appellation INT(4) NOT NULL,
     CONSTRAINT pk_cepage_appellation PRIMARY KEY(id_cepage_appellation),
         CONSTRAINT fk_id_cepage FOREIGN KEY(id_cepage) REFERENCES t_cepage(id_cepage),
-        CONSTRAINT fk_id_appellation FOREIGN KEY(id_appellation) REFERENCES t_appellation(id_appellation)
+        CONSTRAINT fk_id_appellation_cepage FOREIGN KEY(id_appellation) REFERENCES t_appellation(id_appellation)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Création de la table temporaire pour gérer les liens entre départements et appellations
