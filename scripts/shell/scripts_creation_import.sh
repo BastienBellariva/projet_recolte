@@ -46,13 +46,13 @@ if [ $verif -eq 0 ]; then
 		fi
 fi
 
-#Lancement du script "3_import_cepage" : importe toutes les cepages de vin
+#Lancement du script "3_import_type" : importe toutes les types de vin
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials d_vigne < ../sql/3_import_cepage.sql
+	mysql --defaults-extra-file=$credentials d_vigne < ../sql/3_import_type.sql
 		if [ $? -eq 0 ]; then
-			echo "La table cepage a été créée et ses valeurs importées correctement." 1>&2
+			echo "La table type a été créée et ses valeurs importées correctement." 1>&2
 		else
-			echo "[Error] Création et importation table cepage"
+			echo "[Error] Création et importation table type"
 			verif=1
 		fi
 fi
@@ -134,9 +134,20 @@ if [ $verif -eq 0 ]; then
 		fi
 fi
 
-#Lancement du script "11_import_appellation" : remplie la table t_appellation et gère les jonctions avec les départements
+#Lancement du script "11_remplissage_declaration_recolte" : remplie la table t_declaration_recolte
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials d_vigne < ../sql/11_import_appellation.sql
+	mysql --defaults-extra-file=$credentials d_vigne < ../sql/11_remplissage_declaration_recolte.sql
+		if [ $? -eq 0 ]; then
+			echo "La table declaration recolte a été remplie avec succès." 1>&2
+		else
+			echo "[Error] Remplissage table declaration recolte"
+			verif=1
+		fi
+fi
+
+#Lancement du script "12_import_appellation" : remplie la table t_appellation et gère les jonctions avec les départements
+if [ $verif -eq 0 ]; then
+	mysql --defaults-extra-file=$credentials d_vigne < ../sql/12_import_appellation.sql
 		if [ $? -eq 0 ]; then
 			echo "La table appellation a été remplie avec succès et les liens avec les départements sont fonctionnels." 1>&2
 		else
@@ -145,9 +156,9 @@ if [ $verif -eq 0 ]; then
 		fi
 fi
 
-#Lancement du script "12_import_region" : remplie la table t_region et met à jour la table departement
+#Lancement du script "13_import_region" : remplie la table t_region et met à jour la table departement
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials d_vigne < ../sql/12_import_region.sql
+	mysql --defaults-extra-file=$credentials d_vigne < ../sql/13_import_region.sql
 		if [ $? -eq 0 ]; then
 			echo "La table region a été remplie avec succès et la table département est à jour. Le lien département-region est opérationnel." 1>&2
 		else
@@ -156,13 +167,13 @@ if [ $verif -eq 0 ]; then
 		fi
 fi
 
-#Lancement du script "13_import_cepage_appellation" : remplie la table t_cepage_appelation
+#Lancement du script "14_import_type_appellation" : remplie la table t_type_appelation
 if [ $verif -eq 0 ]; then
-	mysql --defaults-extra-file=$credentials d_vigne < ../sql/13_import_cepage_appellation.sql
+	mysql --defaults-extra-file=$credentials d_vigne < ../sql/14_import_type_appellation.sql
 		if [ $? -eq 0 ]; then
-			echo "La table t_cepage_appellation a été remplie avec succès. Le lien cepage-appellation est opérationnel." 1>&2
+			echo "La table t_type_appellation a été remplie avec succès. Le lien type-appellation est opérationnel." 1>&2
 		else
-			echo "[Error] Remplissage table t_cepage_appellation"
+			echo "[Error] Remplissage table t_type_appellation"
 			verif=1
 		fi
 fi

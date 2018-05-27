@@ -26,7 +26,7 @@ ALTER TABLE t_departement
 ADD COLUMN id_region INT(4);
 
 ALTER TABLE t_departement
-ADD CONSTRAINT fk_id_region FOREIGN KEY(id_region) REFERENCES t_region(id_region);
+ADD CONSTRAINT fk_departement_region FOREIGN KEY(id_region) REFERENCES t_region(id_region);
 
 -- On insert les valeurs dans la table region
 INSERT INTO t_region (

@@ -25,8 +25,8 @@ CREATE TABLE t_appellation_departement (
     id_appellation INT(4) NOT NULL,
     id_departement INT(4) NOT NULL,
     CONSTRAINT pk_id_appellation_departement PRIMARY KEY(id_appellation_departement),
-        CONSTRAINT fk_id_appellation FOREIGN KEY(id_appellation) REFERENCES t_appellation(id_appellation),
-        CONSTRAINT fk_id_departement FOREIGN KEY(id_departement) REFERENCES t_departement(id_departement)
+        CONSTRAINT fk_appellation_departement_appellation FOREIGN KEY(id_appellation) REFERENCES t_appellation(id_appellation),
+        CONSTRAINT fk_appellation_departement_departement FOREIGN KEY(id_departement) REFERENCES t_departement(id_departement)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Création de la table temporaire pour gérer les liens entre départemenents et appellations
