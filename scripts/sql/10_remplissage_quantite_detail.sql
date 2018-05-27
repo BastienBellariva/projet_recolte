@@ -145,7 +145,7 @@ INSERT INTO t_quantite_detail (
         tmp_id_categorie,
         tmp_id_quantite,
         tmp_id_type,
-        tmp_quantite_aop_blanc
+        tmp_quantite_aop_vsi
     FROM t_tmp_quantite_detail;
 
 
@@ -309,6 +309,3 @@ INSERT INTO t_quantite_detail (
 
 -- On supprime les tables temporaires
 DROP TABLE t_tmp_quantite_detail;
-
--- On supprime la table vigne
-DROP TABLE t_vigne_import;

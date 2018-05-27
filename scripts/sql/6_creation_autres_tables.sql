@@ -43,9 +43,9 @@ CREATE TABLE t_quantite_detail (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Table déclaration : stocke le nombre de déclarations de récoltes par département
-CRATE TABLE t_declaration_recolte (
+CREATE TABLE t_declaration_recolte (
   id_declaration_recolte INT(4) NOT NULL AUTO_INCREMENT,
-  nombre_declaration recolte INT(4) NOT NULL,
+  nombre_declaration_recolte INT(4) NOT NULL,
   id_departement INT(4) NOT NULL,
   CONSTRAINT pk_id_declaration_recolte PRIMARY KEY(id_declaration_recolte),
     CONSTRAINT fk_declaration_recolte_departement FOREIGN KEY(id_departement) REFERENCES t_departement(id_departement)

@@ -4,7 +4,7 @@ CREATE TABLE t_tmp_declaration_recolte (
     tmp_nombre_declaration INT(4) NOT NULL,
     tmp_numero_departement VARCHAR(4) NOT NULL,
     tmp_id_departement INT(4),
-    CONSTRAINT pk_id_tmp_declaration_recolte
+    CONSTRAINT pk_id_tmp_declaration_recolte PRIMARY KEY(id_tmp_declaration_recolte)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- On insert les vlaeurs qu'on veut dans notre table temporaire
@@ -25,7 +25,7 @@ SET tmp_id_departement =
 
 -- On transfert les valeurs dans la table t_declaration_recolte
 INSERT INTO t_declaration_recolte (
-    nombre_declaration,
+    nombre_declaration_recolte,
     id_departement )
     SELECT
         tmp_nombre_declaration,
@@ -34,3 +34,6 @@ INSERT INTO t_declaration_recolte (
 
 -- On supprime les tables temporaires
 DROP TABLE t_tmp_declaration_recolte;
+
+-- On supprime la table vigne
+DROP TABLE t_vigne_import;
