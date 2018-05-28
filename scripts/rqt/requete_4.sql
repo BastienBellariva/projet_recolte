@@ -1,5 +1,5 @@
--- affiche tout les cepages 
-SELECT code_cepage AS 'Cepage',
-information_cepage AS 'Description'
-FROM t_cepage
+-- affiche tout les types 
+SELECT code_type AS 'Types',
+information_type AS 'Description'
+FROM t_type
 ;

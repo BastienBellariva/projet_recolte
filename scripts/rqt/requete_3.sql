@@ -13,11 +13,11 @@ CONCAT(TRUNCATE(TRUNCATE(vsi.valeur_quantite_detail, 0)/total_quantite * 100, 1)
 CONCAT(TRUNCATE(TRUNCATE(aca.valeur_quantite_detail, 0)/total_quantite * 100, 1), ' %') AS 'Pourcentage d''ACA'
 FROM t_departement d, 
 t_quantite q,
-(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_cepage = 2 GROUP BY id_cepage , id_quantite) AS blanc,
-(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_cepage = 1 GROUP BY id_cepage , id_quantite) AS rouge,
-(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_cepage = 3 GROUP BY id_cepage , id_quantite) AS rose,
-(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_cepage = 4 GROUP BY id_cepage , id_quantite) AS vsi,
-(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_cepage = 9 GROUP BY id_cepage , id_quantite) AS aca
+(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_type = 2 GROUP BY id_type , id_quantite) AS blanc,
+(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_type = 1 GROUP BY id_type , id_quantite) AS rouge,
+(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_type = 3 GROUP BY id_type , id_quantite) AS rose,
+(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_type = 4 GROUP BY id_type , id_quantite) AS vsi,
+(SELECT id_quantite, SUM(valeur_quantite_detail) AS 'valeur_quantite_detail' FROM t_quantite_detail WHERE id_type = 9 GROUP BY id_type , id_quantite) AS aca
 WHERE d.id_departement = q.id_departement
 AND q.id_quantite = blanc.id_quantite
 AND q.id_quantite = rouge.id_quantite
