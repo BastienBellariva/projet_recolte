@@ -1,6 +1,6 @@
 -- On crée la table stockant toutes les appellations
 CREATE TABLE t_appellation_import (
-    i_libelle_appellation VARCHAR(50) NOT NULL,
+    i_libelle_appellation VARCHAR(60) NOT NULL,
     i_libelle_departement VARCHAR(80) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -14,7 +14,7 @@ IGNORE 1 LINES;
 -- Création de la table appellation
 CREATE TABLE t_appellation (
     id_appellation INT(4) NOT NULL AUTO_INCREMENT,
-    libelle_appellation VARCHAR (50) NOT NULL,
+    libelle_appellation VARCHAR (60) NOT NULL,
     description_appellation TEXT,
     CONSTRAINT pk_id_appellation PRIMARY KEY(id_appellation)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -32,7 +32,7 @@ CREATE TABLE t_appellation_departement (
 -- Création de la table temporaire pour gérer les liens entre départemenents et appellations
 CREATE TABLE t_tmp_appellation_departement (
     tmp_id_appellation_departement INT(4) NOT NULL AUTO_INCREMENT,
-    tmp_libelle_appellation VARCHAR(50) NOT NULL,
+    tmp_libelle_appellation VARCHAR(60) NOT NULL,
     tmp_libelle_departement VARCHAR(80) NOT NULL,
     tmp_id_appellation INT(4),
     tmp_id_departement INT(4),

@@ -1,6 +1,6 @@
 -- On crée la table stockant tous les cépages contenues dans le CSV, sans vérification
 CREATE TABLE t_type_import (
-  i_code_type VARCHAR(30) NOT NULL,
+  i_code_type VARCHAR(10) NOT NULL,
   i_information_type VARCHAR(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -14,7 +14,7 @@ IGNORE 1 LINES;
 -- Création de la table t_type finale et propre, avec ID
 CREATE TABLE t_type (
   id_type INT(4) NOT NULL AUTO_INCREMENT,
-  code_type VARCHAR(30) NOT NULL,
+  code_type VARCHAR(10) NOT NULL,
   information_type VARCHAR(80) NOT NULL,
   CONSTRAINT pk_id_type PRIMARY KEY(id_type)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

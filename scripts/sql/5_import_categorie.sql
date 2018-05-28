@@ -1,6 +1,6 @@
 -- On crée la table stockant tous les categories contenus dans le CSV, sans vérification.
 CREATE TABLE t_categorie_import (
-  i_libelle_categorie VARCHAR(30) NOT NULL,
+  i_libelle_categorie VARCHAR(15) NOT NULL,
   i_infomation_categorie VARCHAR(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -14,7 +14,7 @@ IGNORE 1 LINES;
 -- Creation de la table t_categorie finale et propre, avec ID
 CREATE TABLE t_categorie (
   id_categorie INT(4) NOT NULL AUTO_INCREMENT,
-  libelle_categorie VARCHAR(30) NOT NULL,
+  libelle_categorie VARCHAR(15) NOT NULL,
   information_categorie VARCHAR(50) NOT NULL,
   CONSTRAINT pk_id_categorie PRIMARY KEY(id_categorie)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
